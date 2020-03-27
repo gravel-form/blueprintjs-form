@@ -1,0 +1,72 @@
+{
+  "name": "@gravel-form/blueprintjs",
+  "version": "0.0.1",
+  "description": "A flexible middlewares driven json schema form with Blueprintjs",
+  "keywords": [
+    "blueprintjs",
+    "form",
+    "json",
+    "json-schema",
+    "react",
+    "shema"
+  ],
+  "bugs": {
+    "url": "https://github.com/gravel-form/blueprintjs-form/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gravel-form/blueprintjs-form"
+  },
+  "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "type-check": "tsc",
+    "compile": "gulp compile",
+    "deploy": "rimraf node_modules/.cache && rimraf out && next build && next export && touch out/.nojekyll && gh-pages -d out -t true",
+    "npm-publish": "rimraf lib && npm run compile && npm publish --access public"
+  },
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
+  },
+  "optionalDependencies": {
+    "@blueprintjs/datetime": "^3.15.2"
+  },
+  "dependencies": {
+    "@gravel-form/core-rc": "^0.0.2",
+    "@types/json-schema": "^7.0.4",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "@blueprintjs/core": "^3.24.0",
+    "@types/bluebird": "^3.5.30",
+    "@types/lodash": "^4.14.149",
+    "@types/node": "^13.9.5",
+    "@types/react": "^16.9.27",
+    "@types/react-dom": "^16.9.5",
+    "@zeit/next-less": "^1.0.1",
+    "babel-plugin-import": "^1.13.0",
+    "bluebird": "^3.7.2",
+    "gh-pages": "^2.2.0",
+    "gulp": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "less": "^3.11.1",
+    "next": "^9.3.3",
+    "null-loader": "^3.0.0",
+    "react": "^16.13.1",
+    "react-async-hook": "^3.6.1",
+    "react-dom": "^16.13.1",
+    "react-grid-system": "^6.3.0",
+    "react-live": "^2.2.2",
+    "rimraf": "^3.0.2",
+    "through2": "^3.0.1",
+    "typescript": "^3.8.3"
+  }
+}
