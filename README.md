@@ -26,7 +26,9 @@ const MyFirstForm = () => {
 
   const extraProps = {
     properties: {
-      password: { component: 'Password' },
+      password: {
+        props: { type:'password' },
+      },
     },
   };
 
@@ -34,7 +36,6 @@ const MyFirstForm = () => {
 
   return (
     <Form
-      layout="vertical"
       middlewares={presetMws}
       schema={schema}
       extraProps={extraProps}

@@ -1,9 +1,7 @@
 import * as React from 'react';
 import { FormCore } from './core';
 import { BlueprintFormProps } from './share';
-
-// TODO: put back
-// import { presetMws } from './preset';
+import { presetMws } from './preset';
 
 const Form: React.FC<BlueprintFormProps> = (props) => {
   const { onChange } = props;
@@ -24,7 +22,7 @@ const Form: React.FC<BlueprintFormProps> = (props) => {
 };
 
 Form.defaultProps = {
-  middlewares: [], // presetMws,
+  middlewares: presetMws,
 };
 
 export default Form;

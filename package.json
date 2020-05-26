@@ -3,10 +3,12 @@
   "version": "0.0.1",
   "description": "A flexible middlewares driven json schema form with Blueprintjs",
   "keywords": [
+    "blueprint",
     "blueprintjs",
     "form",
     "json",
     "json-schema",
+    "jsonschema",
     "react",
     "shema"
   ],
