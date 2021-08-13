@@ -60,7 +60,7 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-typescript": "^6.0.0-alpha.1",
     "less": "^3.11.1",
-    "next": "^9.3.3",
+    "next": "^11.1.0",
     "null-loader": "^3.0.0",
     "react": "^16.13.1",
     "react-async-hook": "^3.6.1",
